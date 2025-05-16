@@ -3,40 +3,43 @@ import React from 'react';
 function Home() {
   return (
     <>
-    
-      <div className="max-w-5xl mx-auto my-10">
+      <div className="max-w-5xl mx-auto my-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301656/old-devi_wyjndc.jpg"
-            alt="Old Devi"
-            className="w-full max-w-md h-120 object-cover rounded-xl shadow-md"
-            loading="lazy"
-          />
-          <p className="mt-2 font-medium text-gray-700">Old Vairat Devi</p>
-        </div>
-      
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301338/vairatdevi_qnajsk.jpg"
-            alt="Vairat Devi"
-            className="w-full max-w-md h-120 object-cover rounded-xl shadow-md"
-            loading="lazy"
-          />
-          <p className="mt-2 font-medium text-gray-700">Vairat Devi</p>
-        </div>
-      
-        <div className="text-center">
-          <img
-            src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301672/choti-devi_jozknu.jpg"
-            alt="Choti Devi"
-            className="w-full max-w-md h-120 object-cover rounded-xl shadow-md"
-            loading="lazy"
-          />
-          <p className="mt-2 font-medium text-gray-700">Choti Vairat Devi</p>
-        </div>
+        {[
+          {
+            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301656/old-devi_wyjndc.jpg",
+            alt: "Old Devi",
+            label: "Old Vairat Devi",
+          },
+          {
+            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301338/vairatdevi_qnajsk.jpg",
+            alt: "Vairat Devi",
+            label: "Vairat Devi",
+          },
+          {
+            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301672/choti-devi_jozknu.jpg",
+            alt: "Choti Devi",
+            label: "Choti Vairat Devi",
+          },
+        ].map((img, index) => (
+          <div key={index} className="text-center space-y-2">
+            <div className="aspect-w-4 aspect-h-3">
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full object-cover rounded-xl shadow-md lg:h-[30rem]"
+                className="w-full object-cover rounded-xl shadow-md  md:h-[30rem]"
+                loading="lazy"
+              />
+            </div>
+            <p className="font-medium text-gray-700">{img.label}</p>
+          </div>
+        ))}
       </div>
       </div>
+
+
+     
 
       
       <div className=" text-gray-900 max-w-5xl mx-auto p-6 md:p-10 rounded-2xl shadow-lg font-serif leading-loose space-y-4">

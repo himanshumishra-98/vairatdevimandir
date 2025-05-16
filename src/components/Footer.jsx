@@ -11,7 +11,7 @@ function Footer() {
             <a href="mailto:shreevairatdevimandirsansthan@gmail.com"       ><img src='/gmail.png' className='w-6 h-6' /></a>
           </div>
       </div>
-      <div className="border-t mt-2 pt-2 text-center text-xs text-gray-600">
+      <div className="border-t mt-2 pt-2 pb-12 lg:pb-2 text-center text-xs text-gray-600">
         © {new Date().getFullYear()}  All rights reserved by Shree Vairat Devi Mandir Sansthan, Chikhaldara, Maharashtra, India 
       </div>
     </div>
