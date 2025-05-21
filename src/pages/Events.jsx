@@ -1,8 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 
 function Events() {
   return (
     <>
+
+      <Helmet>
+        <meta name="description" content="Stay updated with all upcoming festivals, poojas, and events at Vairat Devi Temple in Chikhaldara." />
+      </Helmet>
+
       <h1 className="text-3xl font-bold m-6 text-center text-orange-700">Jirnoddhar Photos</h1>       
       <section className="text-gray-800 px-6 md:px-20 py-10 leading-relaxed">
         <div className="max-w-6xl mx-auto">

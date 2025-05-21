@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 
 function Gallery() {
   return (
     <>
+
+      <Helmet>
+        <meta name="description" content="View beautiful photos of Vairat Devi Temple, Chikhaldara, including festivals, architecture, and scenic views." />
+      </Helmet>
       <h1 className="text-3xl font-bold m-6 text-center text-orange-700">Navratri - 9 Days 9 Colours 9 Energies</h1>       
         <section className="text-gray-800 px-6 md:px-20 py-10 leading-relaxed">
           <div className="max-w-6xl mx-auto">

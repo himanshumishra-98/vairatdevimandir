@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function AboutTemple() {
   return (
     <>
+
+      <Helmet>
+        <meta name="description" content="Learn about the history, significance, and legends of Vairat Devi Temple in Chikhaldara, Maharashtra." />
+      </Helmet>
+
       <section className="text-gray-800 px-6 md:px-20 py-10 leading-relaxed">
       <div className="max-w-5xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">

@@ -1,8 +1,20 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+
 
 function Home() {
   return (
     <>
+
+       <Helmet>
+        <title>वैराट देवी मंदिर | चिखलदरा में स्थित एक पावन आध्यात्मिक स्थल</title>
+        <meta name="description" content="Welcome to vairat devi mandir in chikhaldara." />
+        <meta name="description" content="Official website of Vairat Devi Temple, Chikhaldara — explore temple history, events, gallery, and donation details." />
+        <link rel="canonical" href="https://vairatdevimandirsansthan.netlify.app/" />
+      </Helmet>
+
+      <h1 className="text-3xl font-bold m-6 text-center text-orange-700">वैराट देवी मंदिर संस्थान में आपका स्वागत है।</h1>
+
       <div className="max-w-5xl mx-auto my-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         {[
