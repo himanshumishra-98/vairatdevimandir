@@ -7,11 +7,11 @@ function Header() {
   return (
     <nav className="bg-[#ff9933] text-white px-6 py-4 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo and Title */}
+        {/* लोगो और शीर्षक */}
         <Link to="/" className="flex items-center space-x-2">
           <img
             src="/logo.jpg"
-            alt="Temple Logo"
+            alt="मंदिर लोगो"
             className="h-20 w-20 object-cover rounded-full"
           />
           <span className="text-xl md:text-3xl font-bold leading-tight">
@@ -19,7 +19,7 @@ function Header() {
           </span>
         </Link>
 
-        {/* Mobile Menu Button */}
+        {/* मोबाइल मेनू बटन */}
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -39,26 +39,26 @@ function Header() {
           </svg>
         </button>
 
-        {/* Desktop Nav Links */}
+        {/* डेस्कटॉप नेविगेशन लिंक */}
         <div className="space-x-6 text-lg font-bold hidden md:flex">
-          <Link to="/" className="hover:underline">Home</Link>
-          <Link to="/about" className="hover:underline">About Temple</Link>
-          <Link to="/gallery" className="hover:underline">Gallery</Link>
-          <Link to="/events" className="hover:underline">Events</Link>
-          <Link to="/donate" className="hover:underline">Donate</Link>
-          <Link to="/aboutChikhaldara" className="hover:underline">About Chikhaldara</Link>
+          <Link to="/" className="hover:underline">मुख्य पृष्ठ</Link>
+          <Link to="/about" className="hover:underline">मंदिर के बारे में</Link>
+          <Link to="/gallery" className="hover:underline">गैलरी</Link>
+          <Link to="/events" className="hover:underline">आयोजन</Link>
+          <Link to="/donate" className="hover:underline">दान करें</Link>
+          <Link to="/aboutChikhaldara" className="hover:underline">चिखलदरा के बारे में</Link>
         </div>
       </div>
 
-      {/* Mobile Nav Links */}
+      {/* मोबाइल नेविगेशन लिंक */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 space-y-2 text-center text-white font-bold">
-          <Link to="/" className="block hover:underline">Home</Link>
-          <Link to="/about" className="block hover:underline">About Temple</Link>
-          <Link to="/gallery" className="block hover:underline">Gallery</Link>
-          <Link to="/events" className="block hover:underline">Events</Link>
-          <Link to="/donate" className="block hover:underline">Donate</Link>
-          <Link to="/aboutChikhaldara" className="block hover:underline">About Chikhaldara</Link>
+          <Link to="/" className="block hover:underline">मुख्य पृष्ठ</Link>
+          <Link to="/about" className="block hover:underline">मंदिर के बारे में</Link>
+          <Link to="/gallery" className="block hover:underline">गैलरी</Link>
+          <Link to="/events" className="block hover:underline">आयोजन</Link>
+          <Link to="/donate" className="block hover:underline">दान करें</Link>
+          <Link to="/aboutChikhaldara" className="block hover:underline">चिखलदरा के बारे में</Link>
         </div>
       )}
     </nav>

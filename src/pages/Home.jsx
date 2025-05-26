@@ -6,50 +6,47 @@ function Home() {
   return (
     <>
 
-       <Helmet>
+        <Helmet>
         <title>वैराट देवी मंदिर | चिखलदरा में स्थित एक पावन आध्यात्मिक स्थल</title>
-        <meta name="description" content="Welcome to vairat devi mandir in chikhaldara." />
-        <meta name="description" content="Official website of Vairat Devi Temple, Chikhaldara — explore temple history, events, gallery, and donation details." />
+        <meta name="description" content="चिखलदरा में स्थित वैराट देवी मंदिर की आधिकारिक वेबसाइट — मंदिर का इतिहास, आयोजन, गैलरी और दान की जानकारी प्राप्त करें।" />
         <link rel="canonical" href="https://vairatdevimandirsansthan.netlify.app/" />
       </Helmet>
 
       <h1 className="text-3xl font-bold m-6 text-center text-orange-700">वैराट देवी मंदिर संस्थान में आपका स्वागत है।</h1>
 
       <div className="max-w-5xl mx-auto my-10 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        {[
-          {
-            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301656/old-devi_wyjndc.jpg",
-            alt: "Old Devi",
-            label: "Old Vairat Devi",
-          },
-          {
-            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301338/vairatdevi_qnajsk.jpg",
-            alt: "Vairat Devi",
-            label: "Vairat Devi",
-          },
-          {
-            src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301672/choti-devi_jozknu.jpg",
-            alt: "Choti Devi",
-            label: "Choti Vairat Devi",
-          },
-        ].map((img, index) => (
-          <div key={index} className="text-center space-y-2">
-            <div className="aspect-w-4 aspect-h-3">
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full object-cover rounded-xl shadow-md lg:h-[30rem]"
-                className="w-full object-cover rounded-xl shadow-md  md:h-[30rem]"
-                loading="lazy"
-              />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {[
+            {
+              src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301656/old-devi_wyjndc.jpg",
+              alt: "Old Devi",
+              label: "पुरानी वैराट देवी",
+            },
+            {
+              src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301338/vairatdevi_qnajsk.jpg",
+              alt: "Vairat Devi",
+              label: "वैराट देवी",
+            },
+            {
+              src: "https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301672/choti-devi_jozknu.jpg",
+              alt: "Choti Devi",
+              label: "छोटी वैराट देवी",
+            },
+          ].map((img, index) => (
+            <div key={index} className="text-center space-y-2">
+              <div className="aspect-w-4 aspect-h-3">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full object-cover rounded-xl shadow-md md:h-[30rem]"
+                  loading="lazy"
+                />
+              </div>
+              <p className="font-medium text-gray-700">{img.label}</p>
             </div>
-            <p className="font-medium text-gray-700">{img.label}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-      </div>
-
 
      
 
@@ -98,12 +95,13 @@ function Home() {
     </div>
 
 
-      <h1 className="text-3xl font-bold m-6 text-center">How to reach :</h1>       
+      <h1 className="text-3xl font-bold m-6 text-center">कैसे पहुँचें :</h1>       
 
       <div className='text-gray-900 mx-20 my-4 p-2 text-2xl'>
-      <h1>In Maharashtra State, the sacred Vairat Devi Mandir is situated in the picturesque hill station of Chikhaldara, located in Amravati district. This serene temple is nestled amidst the Satpura ranges and is well connected by road to nearby cities like Amravati (approx. 85 km), Paratwada, and Nagpur. The nearest railway station is Badnera Junction (around 110 km away), which is on the Mumbai–Nagpur route and is well-served by major trains. The closest airport is in Amravati, approximately 2–3 hours away by road. Chikhaldara is accessible by state transport buses and private vehicles, with regular services from cities across Maharashtra. The temple attracts devotees throughout the year, especially during Navratri. Local guides and information kiosks are available near the temple for the convenience of pilgrims. With its lush greenery, cool climate, and spiritual ambiance, Vairat Devi Mandir remains a key pilgrimage site in the Vidarbha region.
-    </h1>
-    </div>
+        <p>
+          महाराष्ट्र राज्य के अमरावती जिले में स्थित हिल स्टेशन चिखलदरा में पावन वैराट देवी मंदिर विराजमान है। यह मंदिर सातपुड़ा पर्वतमाला की हरियाली में बसा हुआ है और पास के शहरों जैसे अमरावती (लगभग 85 कि.मी.), परतवाड़ा और नागपुर से सड़क मार्ग द्वारा अच्छी तरह जुड़ा हुआ है। निकटतम रेलवे स्टेशन बडनेरा जंक्शन (लगभग 110 कि.मी.) है, जो मुंबई–नागपुर मार्ग पर स्थित है और प्रमुख ट्रेनों द्वारा सेवित है। सबसे निकटतम हवाई अड्डा अमरावती में है, जो सड़क मार्ग से लगभग 2–3 घंटे की दूरी पर है। चिखलदरा तक राज्य परिवहन की बसें और निजी वाहन आसानी से पहुँच सकते हैं, और महाराष्ट्र के विभिन्न शहरों से नियमित सेवाएं उपलब्ध हैं। मंदिर में पूरे वर्ष श्रद्धालुओं की भीड़ लगी रहती है, विशेष रूप से नवरात्रि के समय। यात्रियों की सुविधा के लिए मंदिर परिसर के पास स्थानीय गाइड और सूचना केंद्र भी उपलब्ध हैं। अपनी हरी-भरी प्रकृति, ठंडी जलवायु और आध्यात्मिक वातावरण के कारण वैराट देवी मंदिर विदर्भ क्षेत्र का एक प्रमुख तीर्थस्थल बना हुआ है।
+        </p>
+      </div>
     </>
     
   )

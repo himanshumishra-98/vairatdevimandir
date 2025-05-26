@@ -4,94 +4,70 @@ import { Helmet } from 'react-helmet-async';
 function AboutTemple() {
   return (
     <>
-
       <Helmet>
-        <meta name="description" content="Learn about the history, significance, and legends of Vairat Devi Temple in Chikhaldara, Maharashtra." />
+        <meta name="description" content="चिखलदरा, महाराष्ट्र में वैराट देवी मंदिर के इतिहास, महत्व और पौराणिक कथाओं के बारे में जानें।" />
       </Helmet>
 
       <section className="text-gray-800 px-6 md:px-20 py-10 leading-relaxed">
-      <div className="max-w-5xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          <div className="text-center">
-            <img src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301667/old-temple_ek6rkh.jpg"
-              alt="Old Vairat Devi Temple" 
-              className="w-full h-60 object-cover rounded-xl shadow-md"
-              loading="lazy"
-            />
-            <p className="mt-2 font-medium text-gray-700">Old Vairat Devi Temple</p>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="text-center">
+              <img src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301667/old-temple_ek6rkh.jpg"
+                alt="पुराना वैराट देवी मंदिर" 
+                className="w-full h-60 object-cover rounded-xl shadow-md"
+                loading="lazy"
+              />
+              <p className="mt-2 font-medium text-gray-700">पुराना वैराट देवी मंदिर</p>
+            </div>
+
+            <div className="text-center">
+              <img
+                src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301652/choti-vairat_pydpvy.jpg"
+                alt="छोटी वैराट देवी मंदिर"
+                className="w-full h-60 object-cover rounded-xl shadow-md"
+                loading="lazy"
+              />
+              <p className="mt-2 font-medium text-gray-700">छोटी वैराट देवी मंदिर</p>
+            </div>
+
+            <div className="text-center">
+              <img
+                src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301686/new-temple_ajtmun.jpg"
+                alt="नया वैराट देवी मंदिर"
+                className="w-full h-60 object-cover rounded-xl shadow-md"
+                loading="lazy"
+              />
+              <p className="mt-2 font-medium text-gray-700">नया वैराट देवी मंदिर</p>
+            </div>
           </div>
 
-          <div className="text-center">
-            <img
-              src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301652/choti-vairat_pydpvy.jpg"
-              alt="Choti Vairat Devi Temple"
-              className="w-full h-60 object-cover rounded-xl shadow-md"
-              loading="lazy"
-            />
-            <p className="mt-2 font-medium text-gray-700">Choti Vairat Devi Temple</p>
-          </div>
+          <h1 className="text-3xl md:text-4xl font-bold text-orange-700 mb-6">
+            वैराट देवी : मेलघाट की रक्षक देवी
+          </h1>
 
-          <div className="text-center">
-            <img
-              src="https://res.cloudinary.com/dbvcpe9rf/image/upload/v1747301686/new-temple_ajtmun.jpg"
-              alt="New Vairat Devi Temple"
-              className="w-full h-60 object-cover rounded-xl shadow-md"
-              loading="lazy"
-            />
-            <p className="mt-2 font-medium text-gray-700">New Vairat Devi Temple</p>
-          </div>
+          <p className="mb-4">
+            वैराट देवी को महाराष्ट्र के मेलघाट क्षेत्र की आदिवासी जनजातियों द्वारा <span className="font-semibold">कुलदेवी</span> के रूप में पूजा जाता है। हर वर्ष, विशेषकर <span className="italic">चैत्र</span> (मार्च–अप्रैल) के शुभ महीने में, हजारों श्रद्धालु उनके आशीर्वाद के लिए एकत्रित होते हैं।
+          </p>
+
+          <p className="mb-4">
+            वैराट देवी को समर्पित मूल मंदिर <span className="font-semibold">वैराट</span> नामक एक दूरस्थ गाँव में स्थित था, जो सतपुड़ा पर्वत श्रृंखला की सबसे ऊँची चोटी पर था। यह प्राचीन स्थल पीढ़ियों से आदिवासियों के लिए आध्यात्मिक और सांस्कृतिक रूप से अत्यंत महत्वपूर्ण था। लेकिन हाल के वर्षों में, यह क्षेत्र <span className="font-semibold">मेलघाट टाइगर प्रोजेक्ट</span> के तहत एक संरक्षित वन क्षेत्र घोषित कर दिया गया, जिससे वहाँ प्रवेश वर्जित हो गया।
+          </p>
+
+          <p className="mb-4">
+            <span className="font-semibold">चमत्कारिक रूप से</span>, वन विभाग द्वारा आधिकारिक रूप से मंदिर का मार्ग बंद किए जाने से एक वर्ष पहले ही समुदाय ने पहल करते हुए <span className="font-semibold">जय माता दी मंडल</span> के मार्गदर्शन में और चिखलदरा के निवासियों के सहयोग से <span className="font-semibold">छोटी वैराट देवी</span> का मंदिर विकसित किया और उसे <span className="font-semibold">एमएसईबी क्षेत्र</span> के पास नये मंदिर में परिवर्तित कर दिया।
+          </p>
+
+          <p className="mb-4">
+            यह समय-संयोग स्वयं देवी का आशीर्वाद माना जाता है। नया मंदिर न केवल श्रद्धालुओं को पूजा का स्थान देता है बल्कि परंपराओं और आध्यात्मिक पहचान को भी जीवित रखता है, साथ ही वन्यजीव संरक्षण नियमों का पालन भी सुनिश्चित करता है।
+          </p>
+
+          <p className="mb-4">
+            आज चिखलदरा का वैराट देवी मंदिर <span className="font-semibold">श्रद्धा, एकता और सांस्कृतिक दृढ़ता का प्रतीक</span> बन चुका है, जो परंपरा और पर्यावरण संरक्षण के बीच सुंदर संतुलन बनाता है।
+          </p>
         </div>
-
-        <h1 className="text-3xl md:text-4xl font-bold text-orange-700 mb-6">
-          Vairat Devi : The Guardian Goddess of Melghat’s Tribal Community
-        </h1>
-        <p className="mb-4">
-          Vairat Devi is worshipped as the{" "}
-          <span className="font-semibold">Kuldevi</span> (clan or ancestral goddess) by the tribal
-          communities of the Melghat region in Maharashtra. Every year, especially during the
-          auspicious month of <span className="italic">Chaitra</span> (March–April), thousands of
-          devotees gather to seek her blessings in a grand celebration of faith and tradition.
-        </p>
-
-        <p className="mb-4">
-          The original temple dedicated to Vairat Devi was located in a remote village called{" "}
-          <span className="font-semibold">Vairat</span>, perched on the highest peak of the Satpura
-          mountain range. This ancient site held deep spiritual and cultural significance for
-          generations of Adivasis. However, in recent years, this area was designated as part of the{" "}
-          <span className="font-semibold">Melghat Tiger Project</span>, a critical conservation zone
-          for wildlife. As a result, entry to the original temple became restricted by forest
-          authorities to protect the delicate ecosystem.
-        </p>
-
-        <p className="mb-4">
-          <span className="font-semibold">Miraculously</span>, just a year before the forest
-          department officially closed access to the original site, the community had already taken
-          proactive steps. With the initiative of the{" "}
-          <span className="font-semibold">Jai Mata Di Mandal</span>—a local religious and cultural
-          organization—and the collective efforts of the residents of Chikhaldara, the temple of{" "}
-          <span className="font-semibold">Choti Vairat Devi</span> itself was renovated and
-          developed into the new Vairat Devi temple within the town of Chikhaldara, near the{" "}
-          <span className="font-semibold">MSEB area</span>.
-        </p>
-
-        <p className="mb-4">
-          This divine timing is seen by many as a blessing of the goddess herself. The new temple
-          not only continues to serve as a sacred space for worship but also preserves the
-          long-standing customs and spiritual identity of the community. It ensures that devotees
-          can still connect with their deity without violating conservation laws or disturbing
-          protected forest areas.
-        </p>
-
-        <p className="mb-4">
-          Today, the Vairat Devi temple in Chikhaldara stands as a{" "}
-          <span className="font-semibold">symbol of faith, unity, and cultural resilience</span>,
-          beautifully blending age-old tradition with the evolving needs of environmental
-          protection.
-        </p>
-      </div>
-    </section>
+      </section>
     </>
-  )
+  );
 }
 
-export default AboutTemple
+export default AboutTemple;
